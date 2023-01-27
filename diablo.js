@@ -949,8 +949,8 @@ Hai,
             break
          case 'tiktok':
             if (!text) return diablobotwhatsapp.reply(`Linknya?`)
-            anu = await fetchJson(`https://https://saipulanuar.ga/api/download/tiktok4?url=${text}`)
-            diablo.sendMessage(diablobotwhatsapp.chat, { video: { url: anu.result.videoHD }, mimetype: 'video/mp4', fileName: `${anu.title}.mp4` }, { quoted: diablobotwhatsapp })
+            anu = await fetchJson(`https://saipulanuar.ga/api/download/tiktok?url=${text}`)
+            diablo.sendMessage(diablobotwhatsapp.chat, { video: { url: anu.result.video }, mimetype: 'video/mp4', fileName: `${anu.title}.mp4` }, { quoted: diablobotwhatsapp })
             break
          case 'igdl':
             if (!text) return diablobotwhatsapp.reply(`Linknya?`)
